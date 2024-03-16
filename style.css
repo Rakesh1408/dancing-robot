@@ -1,0 +1,161 @@
+.main{
+  border: 3px solid black;
+  height: 500px;
+  margin-top: 100px;
+  background: black;
+}
+
+
+.face{
+  background: chartreuse;
+  height: 150px;
+  width: 150px;
+  border-radius: 50% 50% 0 0;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.main:hover .face{
+ 
+  
+  animation: facee infinite 0.1s;
+  animation-duration: 1s;
+}
+
+.eyes{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  animation:infinite;
+  animation-name: hi;
+}
+.leye,.reye{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+}
+
+
+
+
+
+.body1{
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+.larm{
+  height: 75px;
+  width: 25px;
+  background: chartreuse;
+  border-radius: 50px;
+  margin-top: 10px;
+  position: relative;
+
+}
+.main:hover .larm{
+  animation: rights 0.1s infinite;
+  animation-duration:1s ;
+}
+@keyframes rights{
+  0%{
+    transform: rotateZ(-10deg);
+  }
+  
+  100%{
+    transform: rotateZ(10deg);
+  }
+}
+
+
+.center{
+  height: 150px;
+  width: 150px;
+  background: chartreuse;
+  border-radius: 0 0 40% 40%;
+}
+
+
+.rarm{
+  height: 75px;
+  width: 25px;
+  background: chartreuse;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.main:hover .rarm{
+  animation: lefts 0.1s infinite;
+  animation-duration:1s ;
+}
+
+@keyframes lefts{
+  0%{
+    transform: rotateZ(10deg);
+  }
+  
+  100%{
+    transform: rotateZ(-10deg);
+  }
+}
+.legs{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: auto;
+  margin-top: -20px;  
+}
+
+
+.lleg{
+  height: 75px;
+  width: 25px;
+  background: chartreuse;
+  border-radius: 50px;
+}
+
+.main:hover .lleg{
+  animation:lefts 0.1s infinite;
+  animation-duration: 1s;
+}
+@keyframes lefts{
+  0%{
+    
+    transform: rotatez(20deg);
+  }
+  50%{
+    transform:translateZ(0px);
+    transform: rotatez(0deg);
+  }
+  100%{
+    transform:translateZ(-10px);
+  }
+}
+.rleg{
+  height: 75px;
+  width: 25px;
+  background: chartreuse;
+  border-radius: 50px;
+}
+.main:hover .rleg{
+  animation:legs 0.1s infinite;
+  animation-duration: 1s;
+}
+@keyframes legs{
+  0%{
+    
+    transform: rotateZ(-20deg);
+  }
+  50%{
+    transform:translateZ(0px);
+  }
+  100%{
+    transform:translateZ(20px);
+  }
+
+}
